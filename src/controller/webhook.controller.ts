@@ -7,7 +7,7 @@ export class WebhookController {
     if (event === 'push') {
       // Extract commit information
       const commits = body.commits;
-      // Notify team about new commits
+      // Notify team about new commits .
       this.notifyTeam(commits);
     }
     return HttpStatus.OK;
